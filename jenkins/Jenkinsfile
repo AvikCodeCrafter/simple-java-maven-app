@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     tools {
       maven 'Maven'
     }
@@ -18,15 +18,19 @@ pipeline {
                 }
         }
 
-        stage('Test') {
+          stage('Test') {
             steps {
-                echo "Testing the Code .... "
+                sh 'mvn test'
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
             }
         }
-
-        stage('Deploy') {
+        stage('Deploy') { 
             steps {
-                echo "Deploying the Code .... "
+                sh './jenkins/scripts/deliver.sh' 
             }
         }
     }
