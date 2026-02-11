@@ -12,6 +12,9 @@ This repository is for the
 tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
 ------------------------------------------------------------------------
 
+![CI/CD Architecture](image.png)
+
+------------------------------------------------------------------------
 ## 🧩 Architecture Overview
 
     Developer → GitHub → Jenkins → Maven Build → JUnit Tests → Package JAR → Deploy to AWS EC2
