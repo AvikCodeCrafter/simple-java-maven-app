@@ -7,6 +7,9 @@
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+This repository is for the
+[Build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
+tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
 ------------------------------------------------------------------------
 
 ## 🧩 Architecture Overview
